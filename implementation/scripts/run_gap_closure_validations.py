@@ -83,6 +83,16 @@ def parse_path_specs(specs: Sequence[str], workspace_root: Path) -> Dict[str, Pa
     return mapping
 
 
+def infer_workspace_root() -> Path:
+    """Infer workspace root for relative data path resolution."""
+    script_path = Path(__file__).resolve()
+    candidates = [script_path.parents[3], script_path.parents[2]]
+    for candidate in candidates:
+        if (candidate / "single_cell_mechinterp").exists():
+            return candidate
+    return script_path.parents[2]
+
+
 def compute_targeted_perturbation_validation(
     edge_fit_path: Path,
     output_dir: Path,
@@ -538,7 +548,7 @@ def compute_cellstate_validation(
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
-    workspace_root = Path(__file__).resolve().parents[3]
+    workspace_root = infer_workspace_root()
     parser.add_argument(
         "--edge-fit-path",
         type=Path,
@@ -592,7 +602,7 @@ def build_parser() -> argparse.ArgumentParser:
 
 def main() -> None:
     args = build_parser().parse_args()
-    workspace_root = Path(__file__).resolve().parents[3]
+    workspace_root = infer_workspace_root()
 
     output_dir: Path = args.output_dir
     figure_dir: Path = args.figure_dir
