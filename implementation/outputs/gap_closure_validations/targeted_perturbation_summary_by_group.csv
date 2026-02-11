@@ -1,0 +1,3 @@
+group,n_measurements,n_unique_edges,median_abs_perturb_delta,median_abs_cohen_d,sign_concordance_rate
+fail,10,5,0.0062601206436444165,0.02162757755191916,0.3
+pass,3,2,0.015154440154440174,0.02451672747523446,0.3333333333333333

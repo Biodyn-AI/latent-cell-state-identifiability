@@ -1,0 +1,3 @@
+model_id,true_beta,alpha,gamma,sigma_x,sigma_y,sigma_r,analytic_var_x,analytic_cov_xy,analytic_var_y,analytic_obs_slope,sample_obs_slope
+edge_present,0.8,1.0,-0.3,1.0,1.0,0.7,2.0,1.3,1.8900000000000003,0.65,0.6445900473216202
+edge_absent,0.0,1.0,1.3,1.0,0.44721359549995815,0.7,2.0,1.3,1.8900000000000003,0.65,0.6427121115562895

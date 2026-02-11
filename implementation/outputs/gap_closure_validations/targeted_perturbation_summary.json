@@ -1,0 +1,15 @@
+{
+  "n_measurements": 13,
+  "n_unique_edges_measured": 7,
+  "datasets_used": [
+    "adamson",
+    "dixit",
+    "dixit7"
+  ],
+  "pass_measurements": 3,
+  "fail_measurements": 10,
+  "median_abs_delta_pass": 0.015154440154440174,
+  "median_abs_delta_fail": 0.0062601206436444165,
+  "abs_delta_mannwhitney_p": 0.2167832167832168,
+  "overall_sign_concordance": 0.3076923076923077
+}

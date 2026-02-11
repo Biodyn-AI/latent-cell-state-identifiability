@@ -1,0 +1,35 @@
+{
+  "seed": 17,
+  "n_observational": 6000,
+  "n_intervention": 6000,
+  "n_environment_per_env": 5000,
+  "reps": 250,
+  "anchor_noises": [
+    0.0,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "nonidentifiability": {
+    "analytic_max_abs_cov_diff": 0.0,
+    "sample_max_abs_cov_diff": 0.026389786405672577,
+    "model_a_sample_obs_slope": 0.6445900473216202,
+    "model_b_sample_obs_slope": 0.6427121115562895
+  },
+  "models": {
+    "edge_present": {
+      "beta": 0.8,
+      "alpha": 1.0,
+      "gamma": -0.3,
+      "sigma_x": 1.0,
+      "sigma_y": 1.0
+    },
+    "edge_absent": {
+      "beta": 0.0,
+      "alpha": 1.0,
+      "gamma": 1.3,
+      "sigma_x": 1.0,
+      "sigma_y": 0.44721359549995815
+    }
+  }
+}

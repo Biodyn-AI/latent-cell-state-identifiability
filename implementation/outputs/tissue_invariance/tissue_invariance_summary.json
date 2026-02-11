@@ -1,0 +1,22 @@
+{
+  "n_pairs_input": 80,
+  "n_pairs_common_across_env": 76,
+  "n_env": 4,
+  "env_order": [
+    "kidney",
+    "lung",
+    "immune",
+    "external_lung"
+  ],
+  "pass_thresholds": {
+    "min_r2": 0.5,
+    "max_rmse": 0.1,
+    "min_varx_ratio": 1.25,
+    "max_pairwise_beta_sd": 0.2
+  },
+  "n_pass": 22,
+  "pass_fraction": 0.2894736842105263,
+  "median_r2": 0.313465426998854,
+  "median_rmse": 0.018130716398896907,
+  "median_varx_ratio": 2.3805599537685636
+}

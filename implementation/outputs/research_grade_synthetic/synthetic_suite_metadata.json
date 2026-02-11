@@ -1,0 +1,50 @@
+{
+  "seed": 1337,
+  "paths": {
+    "output_dir": "/Users/ihorkendiukhov/biodyn-work/subproject_10_identifiability_latent_cell_state_confounding/implementation/outputs/research_grade_synthetic",
+    "figure_dir": "/Users/ihorkendiukhov/biodyn-work/subproject_10_identifiability_latent_cell_state_confounding/reports/figures"
+  },
+  "nonidentifiability": {
+    "continuum_rows": 17,
+    "continuum_feasible_rows": 13,
+    "classifier_auc_mean": 0.4993982645325895,
+    "classifier_accuracy_mean": 0.49951388888888887,
+    "classifier_alt_beta": 0.0
+  },
+  "estimator_benchmark": {
+    "n_scenarios": 5,
+    "n_estimators": 6,
+    "best_rmse": 0.014185912818911028,
+    "worst_rmse": 0.36944246770169353
+  },
+  "anchor_phase": {
+    "gamma_grid_size": 7,
+    "anchor_noise_grid_size": 7,
+    "mean_improvement": 0.20039459797498424,
+    "fraction_anchor_better": 0.8571428571428571
+  },
+  "environment_stress": {
+    "alpha_shift_grid_size": 4,
+    "variance_ratio_grid_size": 4,
+    "best_rmse_gain": 0.5147150732371488,
+    "worst_rmse_gain": -3.7108557683346914
+  },
+  "config": {
+    "nonid_n_obs": 8000,
+    "classifier_reps": 200,
+    "classifier_n_per_class": 1800,
+    "benchmark_reps": 250,
+    "benchmark_n_obs": 5000,
+    "benchmark_n_int": 5000,
+    "anchor_noises": [
+      0.0,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "phase_reps": 120,
+    "phase_n": 3200,
+    "env_reps": 220,
+    "env_n": 3000
+  }
+}

@@ -1,0 +1,2 @@
+auc_mean,auc_sd,accuracy_mean,accuracy_sd,beta_base,beta_alt,gamma_alt,classifier_reps
+0.4993982645325895,0.013439110059415295,0.49951388888888887,0.011814809819151596,0.8,0.0,1.3,200

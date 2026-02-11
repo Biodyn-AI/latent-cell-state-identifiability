@@ -1,0 +1,25 @@
+{
+  "input_edge_count": 76,
+  "threshold": {
+    "r2_min": 0.5,
+    "rmse_max": 0.1,
+    "varx_ratio_min": 1.25,
+    "pairwise_sd_max": 0.2
+  },
+  "pass_count": 22,
+  "pass_fraction": 0.2894736842105263,
+  "pass_median_r2": 0.7383692763604877,
+  "pass_median_rmse": 0.005735625917541544,
+  "pass_median_loo_range": 0.027110305361098874,
+  "fail_median_r2": 0.13039479213880012,
+  "fail_median_loo_range": 0.14370941331033787,
+  "permutation_null": {
+    "observed_pass_count": 22,
+    "observed_pass_fraction": 0.2894736842105263,
+    "null_mean_pass_count": 10.61,
+    "null_sd_pass_count": 2.9643675463578734,
+    "null_q95_pass_count": 16.0,
+    "empirical_p_value": 0.001996007984031936,
+    "n_permutations": 500
+  }
+}
