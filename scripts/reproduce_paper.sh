@@ -48,7 +48,7 @@ if [[ ${missing_count} -eq 0 ]]; then
   run python3 "${SCRIPT_DIR}/run_gap_closure_validations.py"
 else
   echo "[reproduce] ${missing_count} real-data assets missing: using cached real-data outputs."
-  if [[ ! -f "${PROJECT_DIR}/implementation/outputs/tissue_invariance/edge_fit_results.csv" ]]; then
+  if [[ ! -f "${PROJECT_DIR}/implementation/outputs/tissue_invariance/tissue_edge_environment_stats.csv" ]]; then
     echo "[reproduce] ERROR: cached tissue invariance outputs missing."
     exit 1
   fi
